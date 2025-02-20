@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+#resultContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.countryCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.countryCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.countryCard h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.countryCard p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+#noResultsMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: red;
+}
