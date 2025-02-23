@@ -70,3 +70,15 @@ button:hover {
   font-size: 18px;
   color: red;
 }
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+#loadingSpinner {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  margin-top: 20px;
+}

@@ -9,8 +9,14 @@
 <body>
     <div class="container">
         <h1>CountrySearch</h1>
+        <div class="button-group">
+            <button onclick="searchEurope()">Get all countries in Europe</button>
+            <button onclick="searchMacedoniaNeighbours()">Get countries neighbouring Macedonia</button>
+            <button onclick="searchMacedonia()">Get Macedonia</button>
+        </div>
         <input type="text" id="searchInput" placeholder="Search for a country...">
         <button onclick="searchCountry()">Search</button>
+        <div id="loadingSpinner" style="display:none;">Loading...</div>
         <div id="resultContainer"></div>
         <div id="noResultsMessage" style="display:none;">Country Not Found</div>
     </div>
