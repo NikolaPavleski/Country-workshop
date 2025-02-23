@@ -3,7 +3,6 @@ const searchCountry = async () => {
     const resultContainer = document.getElementById('resultContainer');
     const noResultsMessage = document.getElementById('noResultsMessage');
     const loadingSpinner = document.getElementById('loadingSpinner');
-    
     if (searchInput === '') {
         return;
     }
@@ -27,10 +26,8 @@ const searchCountry = async () => {
                 } else {
                     flag = 'default-flag.png';
                 }
-
                 const languages = country.languages ? Object.values(country.languages).join(', ') : 'N/A';
                 const currencies = country.currencies ? Object.values(country.currencies).map(currency => currency.name).join(', ') : 'N/A';
-
                 countryCard.innerHTML = `
                     <img src="${flag}" alt="Flag of ${country.name.common}">
                     <h3>${country.name.common}</h3>
@@ -136,7 +133,6 @@ const sortCountries = (criteria, ascending) => {
     countries.sort((a, b) => {
         const aValue = a.querySelector(`p strong:contains(${criteria})`).nextSibling.nodeValue.trim();
         const bValue = b.querySelector(`p strong:contains(${criteria})`).nextSibling.nodeValue.trim();
-        
         return ascending ? aValue - bValue : bValue - aValue;
     });
     resultContainer.innerHTML = '';
